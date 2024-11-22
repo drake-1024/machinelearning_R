@@ -29,9 +29,9 @@ This example highlights a critical issue in machine learning: biased training da
 		
   - **Accuracy**: Overall percentage of correct predictions.
   - **Sensitivity (Recall, or True Positive Rate (TPR))**: Ability to correctly identify positive cases `TP/(TP+FN)`.
-  - **Specificity (True Negative Rate (TNR))**: Ability to correctly identify negative cases `TN/(TN+FP)`. Specificity can also be quantified by the proportion of outcomes called positives that are actually positives `TP/(TP+FP)`. This quantity is called the positive predicitve value (PPV) or **precision**.
+  - **Specificity (True Negative Rate (TNR))**: Ability to correctly identify negative cases `TN/(TN+FP)`. Specificity can also be quantified by the proportion of outcomes called positives that are actually positives `TP/(TP+FP)`. This quantity is called the **Positive Predicitve Value (PPV)** or **Precision**.
   - **Prevalence**: The proportion of positives (Females here because Females precedes Males alphabetically)
-  - Other metrics include F1-score
+  - Other metrics include F1 score
 
 
 ## Key Takeaways:
