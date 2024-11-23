@@ -33,7 +33,7 @@ In this exercise, the **`F_meas()`** function from the `caret` package is used t
 - **Visualization**: Provides a clear way to identify the most effective threshold by observing trends in the F_1 score.
 - **Sensitivity and Specificity**: These metrics supplement the F1 Score by offering insights into the balance between true positives and true negatives.
 - **Threshold Tuning**: Highlights how small adjustments to the decision boundary can significantly impact performance metrics.
-
+- A machine learning algorithm with very high sensitivity and specificity may not be useful in practice when prevalence is close to either 0 or 1. For example, if you develop an algorithm for disease diagnosis with very high sensitivity, but the prevalence of the disease is pretty low, then the precision of your algorithm is probably very low based on Bayes' theorem.
 
 ## Libraries Used
 
