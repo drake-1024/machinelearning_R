@@ -12,9 +12,9 @@ When evaluating methods, such as guessing versus using a height cutoff for class
 
 2. **Data Simulation for Height Cutoff**: Create predictions based on whether height exceeded predefined cutoff values. Then, compute sensitivity, specificity, and precision for each cutoff.
 
-3. **ROC Curve**: Plot Sensitivity against Precision (1 - specificity) for both methods.
+3. **ROC Curves**: Plot Sensitivity against Precision (1 - specificity) for both methods.
 
-4. **Precision-Recall Curve**: Plot Precision against Recall to highlight differences in precision due to prevalence.
+4. **Precision-Recall Curves**: Plot Precision against Recall to highlight differences in precision due to prevalence.
 
 5. **Comparison by Reclassifying Positives**: Re-evaluate PR curves by redefining "positives" (e.g., treating Males as positive). Notice how precision changes with prevalence.
 
