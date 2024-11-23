@@ -1,6 +1,10 @@
 # Load the ggrepel library for text label repelling
 library(ggrepel)
 
+
+
+#### 1. Data Simulation for Guessing
+
 # Set the random seed for reproducibility
 set.seed(2024)
 
@@ -14,9 +18,13 @@ guessing <- map_df(probs, function(p) {
     label = p,                          # Include the probability as the label
     FPR = 1 - specificity(y_hat, test_set$sex),  # Compute False Positive Rate (1 - Specificity)
     TPR = sensitivity(y_hat, test_set$sex),     # Compute True Positive Rate (Sensitivity)
-    precision = precision(y_hat, test_set$sex)  # Compute precision
+    precision = precision(y_hat, test_set$sex)  # Compute Precision
   )
 })
+
+
+
+#### 2. Data Simulation for Height Cutoff
 
 # Generate data for the ROC curve using height-based cutoff predictions
 cutoffs <- c(50, seq(60, 75), 80)  # Define height cutoffs for predictions
@@ -26,30 +34,42 @@ height_cutoff <- map_df(cutoffs, function(x) {
   list(
     method = "Height cutoff",            # Label the method as "Height cutoff"
     label = x,                           # Include the cutoff as the label
-    FPR = 1 - specificity(y_hat, test_set$sex),  # Compute False Positive Rate
-    TPR = sensitivity(y_hat, test_set$sex),     # Compute True Positive Rate
-    precision = precision(y_hat, test_set$sex)  # Compute precision
+    FPR = 1 - specificity(y_hat, test_set$sex),  # Compute False Positive Rate (1 - Specificity)
+    TPR = sensitivity(y_hat, test_set$sex),     # Compute True Positive Rate (Sensitivity)
+    precision = precision(y_hat, test_set$sex)  # Compute Precision
   )
 })
 
+
+
+#### 3. ROC Curves
+
 # Plot both the "Guessing" and "Height cutoff" ROC curves together
 bind_rows(guessing, height_cutoff) %>%  # Combine the two datasets
-  ggplot(aes(FPR, TPR, color = method, label = label)) +  # Plot FPR vs. TPR
+  ggplot(aes(FPR, TPR, color = method, label = label)) +  # Plot TPR (Sensitivity) against FPR (1 - Specificity)
   geom_line() +                                           # Add lines to the plot
   geom_point() +                                          # Add points for each label
   geom_text_repel(nudge_x = 0.01, nudge_y = -0.01, size = 3, show.legend = FALSE) +  # Repel text labels
   xlab("FPR (1 - Specificity)") +                        # Label x-axis
   ylab("TPR (Sensitivity)")                              # Label y-axis
 
-# Plot precision against recall (TPR)
+
+
+#### 4. Precision-Recall Curves
+
+# Plot Precision against Recall (TPR)
 bind_rows(guessing, height_cutoff) %>%  # Combine the two datasets
-  ggplot(aes(TPR, precision, color = method, label = label)) +  # Plot TPR vs. Precision
+  ggplot(aes(TPR, precision, color = method, label = label)) +  # Plot Precision against Recall (TPR)
   geom_line() +                                                 # Add lines to the plot
   geom_point() +                                                # Add points for each label
   geom_text_repel(nudge_x = 0.01, nudge_y = -0.01, size = 3, show.legend = FALSE) +  # Repel text labels
   xlab("TPR (Recall)") +                                        # Label x-axis
   ylab("Precision") +                                           # Label y-axis
   ylim(0, 1)                                                   # Set y-axis limits to [0, 1]
+
+
+
+#### 5. Comparison by Reclassifying Positives
 
 # Repeat the process for predictions switching from "Female" to "Male" predictions
 
@@ -79,9 +99,9 @@ height_cutoff <- map_df(cutoffs, function(x) {
   )
 })
 
-# Plot precision against recall (TPR) for the new predictions
+# Plot Precision against Recall (TPR) for the new predictions
 bind_rows(guessing, height_cutoff) %>%  # Combine the two datasets
-  ggplot(aes(TPR, precision, color = method, label = label)) +  # Plot TPR vs. Precision
+  ggplot(aes(TPR, precision, color = method, label = label)) +  # Plot Precision against Recall (TPR)
   geom_line() +                                                 # Add lines to the plot
   geom_point() +                                                # Add points for each label
   geom_text_repel(nudge_x = 0.01, nudge_y = -0.01, size = 3, show.legend = FALSE) +  # Repel text labels
