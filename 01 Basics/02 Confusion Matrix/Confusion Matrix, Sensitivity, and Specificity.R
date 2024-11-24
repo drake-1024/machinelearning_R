@@ -1,3 +1,8 @@
+# Load the required libraries
+library(tidyverse)
+library(dslabs)
+library(caret)
+
 #### 1. Tabulate Predictions vs Actual Values
 
 # Creates a confusion matrix-like table summarizing predictions vs actual values
