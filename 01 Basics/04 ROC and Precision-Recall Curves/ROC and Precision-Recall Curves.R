@@ -1,9 +1,21 @@
 # Load the ggrepel library for text label repelling
+library(ggplot2)
 library(ggrepel)
-
-
+library(caret)
+library(purrr)
 
 #### 1. Data Simulation for Guessing
+
+p <- 0.9  # Set the probability of predicting "Male" to be 90%
+
+n <- length(test_index)  # Get the number of test samples (length of test_index)
+
+# Sample "Male" or "Female" for each test sample, based on the probability `p`
+y_hat <- sample(c("Male", "Female"), n, replace = TRUE, prob=c(p, 1-p)) %>%
+  factor(levels = levels(test_set$sex))  # Convert the result to a factor with the same levels as `test_set$sex`
+
+mean(y_hat == test_set$sex)  # Calculate the proportion of correct predictions (i.e., where the predicted sex matches the actual sex)
+
 
 # Set the random seed for reproducibility
 set.seed(2024)
