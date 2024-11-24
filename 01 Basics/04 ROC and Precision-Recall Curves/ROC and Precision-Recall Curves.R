@@ -1,4 +1,4 @@
-# Load the ggrepel library for text label repelling
+# Load the required libraries
 library(ggplot2)
 library(ggrepel)
 library(caret)
