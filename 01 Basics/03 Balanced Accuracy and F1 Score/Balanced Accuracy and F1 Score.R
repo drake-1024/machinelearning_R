@@ -1,3 +1,8 @@
+# Load the required libraries
+library(tidyverse)
+library(dslabs)
+library(caret)
+
 #### 1. Define Cutoff Sequence
 
 # Generate a sequence of cutoff values from 61 to 70
