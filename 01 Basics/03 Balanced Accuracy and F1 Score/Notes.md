@@ -1,4 +1,5 @@
 # Balanced Accuracy and F1 Score
+_Note: The R codes in this section requires the codes from the previous sections to be executed first in order to run correctly._
 
 ## Motivation
 
@@ -37,6 +38,6 @@ In this exercise, the **`F_meas()`** function from the `caret` package is used t
 
 ## Libraries Used
 
-- **tidyverse**: For data manipulation and visualization.
-- **caret**: For computing metrics like sensitivity, specificity, and F_1 score.
-- **dslabs**: To access datasets used for classification tasks.
+- **`tidyverse`**: For data manipulation and visualization.
+- **`caret`**: For computing metrics like sensitivity, specificity, and F_1 score.
+- **`dslabs`**: To access datasets used for classification tasks.
