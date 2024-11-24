@@ -1,4 +1,5 @@
 # ROC and Precision-Recall Curves
+_Note: The R codes in this section requires the codes from the previous sections to be executed first in order to run correctly._
 
 ## Motivation
 When evaluating methods, such as guessing versus using a height cutoff for classification, comparing accuracy or F1 scores alone can be limiting. For guessing, we typically assume equal probabilities, though higher probabilities for certain outcomes (e.g., guessing "Male" more frequently in a biased sample) can increase accuracy at the cost of sensitivity. To address these trade-offs, we use graphical comparisons.
