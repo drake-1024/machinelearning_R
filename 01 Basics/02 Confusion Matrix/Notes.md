@@ -1,5 +1,5 @@
 # Basics of Performance Evaluation and Model Metrics
-_Note: The R codes in this section requires the codes from the previous sections to be executed first in order to run correctly._
+_Note: The R codes in this section requires the code from the previous section to be executed first in order to run correctly._
 
 ## Motivation
 
