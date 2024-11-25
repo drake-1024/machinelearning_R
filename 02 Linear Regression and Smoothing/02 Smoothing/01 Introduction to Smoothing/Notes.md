@@ -23,5 +23,5 @@ This exercise demonstrates the limitations of a simple linear regression model w
 
 ### Libraries Used
 
-- **`tidyverse`**: A collection of R packages (including `ggplot2`, `dplyr`, `tidyr`) for data manipulation and visualization.
-- **`dslabs`**: Contains datasets such as `polls_2008` used for demonstrating the analysis.
+- **`tidyverse`**: For data manipulation and visualization.
+- **`dslabs`**: Contains the `polls_2008` dataset used for demonstrating the analysis.
