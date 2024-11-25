@@ -1,8 +1,8 @@
 # Load the necessary libraries
-library(tidyverse)  # For data manipulation and visualization
-library(dslabs)     # Contains data like 'polls_2008'
+library(tidyverse)    # For data manipulation and visualization
+library(dslabs)       # Contains the `polls_2008` dataset
 
-# Load the polls_2008 dataset from the dslabs package
+# Load the polls_2008 dataset
 data("polls_2008")
 
 # Create a scatter plot to visualize the relationship between day and margin
