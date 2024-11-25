@@ -1,8 +1,8 @@
 # Load the necessary libraries
-library(dplyr)     # For data manipulation
-library(ggplot2)    # For data visualization and plotting
+library(tidyverse)    # For data manipulation and visualization
+library(dslab)        # Contains the `polls_2008` dataset
 
-# Load the polls_2008 dataset from the dslabs package
+# Load the polls_2008 dataset
 data("polls_2008")
 
 #### 1. Define Span and Prepare Data
