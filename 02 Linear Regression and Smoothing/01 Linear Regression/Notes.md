@@ -34,10 +34,7 @@ This simplification allows us to illustrate how machine learning techniques can 
 
 ## Libraries Used
 
-- **`tidyverse`:** A collection of R packages for data manipulation, visualization, and analysis, including `ggplot2` for plotting and `dplyr` for data manipulation.
-  
-- **`dslabs`:** Provides datasets and tools for data science education, including the `mnist_27` dataset used in this example.
-
-- **`caret`:** A package for training and evaluating machine learning models, which is used here to calculate the accuracy of the predictions.
-
-- **`gridExtra`:** A package to arrange multiple plots in a grid, making it easier to compare the visualizations of the smallest and largest values for the predictors.
+- **`tidyverse`:** For data manipulation, visualization
+- **`dslabs`:** Contains the `mnist_27` dataset.
+- **`caret`:** For training and evaluating machine learning models, which is used here to calculate the accuracy of the predictions.
+- **`gridExtra`:** To arrange multiple plots in a grid, making it easier to compare the visualizations of the smallest and largest values for the predictors.
