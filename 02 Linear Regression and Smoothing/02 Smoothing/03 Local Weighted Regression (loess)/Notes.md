@@ -23,7 +23,7 @@ Additionally, this method incorporates a **weighted** approach to fitting, where
 
 4. **Define span values**: Choose a set of span values (e.g., 0.66, 0.25, 0.15, and 0.10).
 5. **Fit loess models for each span**: Fit separate loess models for each span value and augment the results using `broom::augment` to add fitted values to the dataset.
-6. **Compare**: Visualize the different loess fits for each span by plotting the smoothed lines for each span value.
+6. **Visualize and Compare**: Visualize the different loess fits for each span by plotting the smoothed lines for each span value.
 
 ### Key Takeaways
 
