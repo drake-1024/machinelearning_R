@@ -1,4 +1,5 @@
 # Local Weighted Regression (loess)
+Note: The R codes in this section requires the codes from the previous sections to be executed first in order to run correctly.
 
 ### Motivation
 
@@ -35,3 +36,4 @@ Additionally, this method incorporates a **weighted** approach to fitting, where
 
 - **`broom`**: For tidying model outputs.
 - **`tidyverse`**: For data manipulation and visualization.
+- **`dslabs`**: Contains the `polls_2008` dataset
