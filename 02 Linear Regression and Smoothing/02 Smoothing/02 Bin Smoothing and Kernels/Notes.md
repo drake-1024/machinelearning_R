@@ -25,5 +25,5 @@ In this case, we use the 2008 polling data and assume that public opinion remain
 
 ### Libraries Used
 
-- **`ggplot2`**: For data visualization and plotting, especially for visualizing the original and smoothed data.
-- **`dplyr`**: For data manipulation, particularly when filtering and preparing data for analysis.
+- **`tidyverse`:** For data manipulation, visualization
+- **`dslabs`:** Contains the `mnist_27` dataset.
