@@ -25,5 +25,5 @@ In this case, we use the 2008 polling data and assume that public opinion remain
 
 ### Libraries Used
 
-- **`tidyverse`:** For data manipulation, visualization
-- **`dslabs`:** Contains the `mnist_27` dataset.
+- **`tidyverse`**: For data manipulation and visualization.
+- **`dslabs`**: Contains the `mnist_27` dataset.
