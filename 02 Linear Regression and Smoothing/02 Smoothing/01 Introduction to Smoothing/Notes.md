@@ -24,5 +24,4 @@ This exercise demonstrates the limitations of a simple linear regression model w
 ### Libraries Used
 
 - **`tidyverse`**: A collection of R packages (including `ggplot2`, `dplyr`, `tidyr`) for data manipulation and visualization.
-- **`ggplot2`**: For creating plots, including scatter plots and smoothed lines (`geom_smooth()`).
 - **`dslabs`**: Contains datasets such as `polls_2008` used for demonstrating the analysis.
