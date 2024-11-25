@@ -1,6 +1,6 @@
 # Load the necessary libraries
 library(tidyverse)    # For data manipulation and visualization
-library(dslab)        # Contains the `polls_2008` dataset
+library(dslabs)        # Contains the `polls_2008` dataset
 
 # Load the polls_2008 dataset
 data("polls_2008")
