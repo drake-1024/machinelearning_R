@@ -1,7 +1,7 @@
 # Load the necessary libraries
-library(tidyverse)  # Loads a collection of packages for data manipulation and visualization
-library(dslabs)     # Loads the 'dslabs' package that contains data like 'polls_2008'
-library(ggplot2)    # Loads 'ggplot2' for data visualization
+library(tidyverse)  # For data manipulation and visualization
+library(dslabs)     # Contains data like 'polls_2008'
+library(ggplot2)    # For data visualization
 
 # Load the polls_2008 dataset from the dslabs package
 data("polls_2008")
