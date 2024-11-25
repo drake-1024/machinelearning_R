@@ -1,4 +1,4 @@
-
+# Bin Smoothing and Kernels
 
 ### Motivation
 
@@ -27,5 +27,3 @@ In this case, we use the 2008 polling data and assume that public opinion remain
 
 - **`ggplot2`**: For data visualization and plotting, especially for visualizing the original and smoothed data.
 - **`dplyr`**: For data manipulation, particularly when filtering and preparing data for analysis.
-- **`ksmooth`**: For applying kernel smoothing to the data with different kernels (box and normal).
-
