@@ -1,4 +1,4 @@
-# Smoothing and Linear Regression
+# Linear Regression
 
 ## Motivation
 
