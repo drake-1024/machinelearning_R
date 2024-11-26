@@ -10,15 +10,13 @@ To address these limitations, this exercise introduces **k-nearest neighbors (kN
 
 ### Key Steps
 
-1. **Load Libraries**: Load necessary libraries.
+1. **Visualize Data**: Plot the predictors (`x_1`, `x_2`) against the target variable (`y`) from the test dataset for a visual understanding of data distribution.
 
-2. **Visualize Data**: Plot the predictors (`x_1`, `x_2`) against the target variable (`y`) from the test dataset for a visual understanding of data distribution.
+2. **Train kNN Model**: Train a k-nearest neighbors (kNN) model on the training dataset to predict the outcome variable.
 
-3. **Train kNN Model**: Train a k-nearest neighbors (kNN) model on the training dataset to predict the outcome variable.
+3. **Make Predictions & Evaluate Accuracy**: Make predictions on the test dataset using the trained kNN model and evaluate accuracy. Compare this with a logistic regression model.
 
-4. **Make Predictions & Evaluate Accuracy**: Make predictions on the test dataset using the trained kNN model and evaluate accuracy. Compare this with a logistic regression model.
-
-5. **Visualize Conditional Probability Maps**: Define a function to visualize the true conditional probabilities and the probabilities predicted by the kNN model. Compare these maps side by side.
+4. **Visualize Conditional Probability Maps**: Define a function to visualize the true conditional probabilities and the probabilities predicted by the kNN model. Compare these maps side by side.
 
 ### Key Takeaways
 
