@@ -4,6 +4,10 @@ library(caret)       # Machine learning functions
 library(dslabs)      # Dataset with the MNIST data
 library(gridExtra)   # To arrange multiple plots in a grid
 
+
+
+#### 1. Visualize Data
+
 # Load the mnist_27 dataset (a subset of MNIST for binary classification: 2 vs. 7)
 data("mnist_27")
 
@@ -12,8 +16,16 @@ mnist_27$test %>%
   ggplot(aes(x_1, x_2, color = y)) +  # Plot x_1 vs x_2 with color according to the label y
   geom_point()  # Add points to the plot
 
+
+
+#### 2. Train kNN Model
+
 # Fit a k-nearest neighbors (kNN) model using all predictors (x_1, x_2) to predict y
 knn_fit <- knn3(y ~ ., data = mnist_27$train)
+
+
+
+#### 3. Make Predictions & Evaluate Accuracy
 
 # Use the fitted kNN model to predict the class labels for the test data and calculate accuracy
 y_hat_knn <- predict(knn_fit, mnist_27$test, type = "class")
@@ -30,6 +42,10 @@ p_hat_lm <- predict(fit_lm, mnist_27$test)
 # Convert the continuous predictions to binary predictions (7 as 7, others as 2) and evaluate accuracy
 y_hat_lm <- factor(ifelse(p_hat_lm > 0.5, 7, 2))  # Threshold at 0.5 to classify as 7 or 2
 confusionMatrix(y_hat_lm, mnist_27$test$y)$overall["Accuracy"]  # Get the accuracy of the logistic regression model on the test set
+
+
+
+#### 4. Visualize Conditional Probability Maps
 
 # Define a function to plot the conditional probability map
 plot_cond_prob <- function(p_hat=NULL){
