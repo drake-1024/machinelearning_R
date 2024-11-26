@@ -11,13 +11,11 @@ In this exercise, we’ll explore how to evaluate kNN models for multiple values
 
 1. **Set Range for `k`**: Define a sequence of values from 3 to 251.
 
-2. **Compute Accuracies**: Use `map_df()` to fit kNN models for each `k`, predict outcomes for both training and test sets, and calculate and store accuracies for each `k`.
+2. **Compute Accuracies**: Use `map_df()` to fit kNN models for each `k`, predict outcomes for both training and test sets, and calculate and store accuracies for each `k`. Save the training and test accuracies for each `k`in a tibble.
 
-3. **Store Results**: Save the training and test accuracies for each `k`in a tibble.
+3. **Visualize Performance**: Create a plot of training and test accuracies against `k` to identify trends.
 
-4. **Visualize Performance**: Create a plot of training and test accuracies against `k` to identify trends.
-
-5. **Identify Optimal `k`**: Find the `k` value with the highest test set accuracy.
+4. **Identify Optimal `k`**: Find the `k` value with the highest test set accuracy.
 
 ### Key Takeaways
 
