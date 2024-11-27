@@ -27,6 +27,5 @@ In this exercise, we’ll explore how to evaluate kNN models for multiple values
 
 - **`caret`**: For implementing kNN using the `knn3()` function.
 - **`tidyverse`**: For data manipulation and visualization.
-- **`caret`**: Machine learning functions
 - **`dslabs`**: Dataset with the MNIST data
 - **`purrr`**: For functional programming tools
