@@ -1,4 +1,5 @@
 # Trees and Random Forests
+_Note: The R codes in this section requires the codes from the previous sections to be executed first in order to run correctly._
 
 ### Decision Trees
 
