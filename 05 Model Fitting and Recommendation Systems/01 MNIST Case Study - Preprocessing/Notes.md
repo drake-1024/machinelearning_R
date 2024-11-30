@@ -18,5 +18,7 @@ The goal is to apply machine learning to the MNIST digits dataset by first prepr
 
 ### Libraries Used
 
+**`caret`**: For training and tuning machine learning models.
+**`tidyverse`**: For data manipulation and visualization.
 **`dslabs`**: Contains the MNIST dataset
 **`matrixStats`**: For calculating summary statistics
