@@ -20,5 +20,5 @@ After preprocessing, we can fit models, starting with kNN. Column names must be 
 
 - **`caret`**: For training and tuning machine learning models.
 - **`tidyverse`**: For data manipulation and visualization.
-- **`dslabs`**: Contains the MNIST dataset
-- **`matrixStats`**: For calculating summary statistics
+- **`dslabs`**: Contains the MNIST dataset.
+- **`matrixStats`**: For calculating summary statistics.
