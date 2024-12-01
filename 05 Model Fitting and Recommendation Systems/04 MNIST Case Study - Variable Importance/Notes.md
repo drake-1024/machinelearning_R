@@ -1,4 +1,5 @@
 # MNIST Case Study - Variable Importance
+_Note: The R codes in this section requires the codes from the previous sections to be executed first in order to run correctly._
 
 ### Motivation
 
@@ -14,8 +15,13 @@ Unlike methods like linear regression, random forests can be difficult to explai
 
 ### Key Takeaways
 
-
+- **Feature Significance**: Variable importance identifies the most impactful predictors, aiding model interpretation and refinement.
+- **Visualization**: Mapping importance scores reveals patterns, such as key regions influencing predictions.
+- **Misclassification Insights**: Analyzing errors helps understand model weaknesses and areas for improvement.
 
 ### Libraries Used
 
-
+- **`caret`**: For training and tuning machine learning models.
+- **`tidyverse`**: For data manipulation and visualization.
+- **`dslabs`**: Contains the MNIST dataset.
+- **`randomForest`**: To create random forests.
